@@ -1,4 +1,4 @@
-﻿# Teste de Responsividade
+# Teste de Responsividade
 
 ## Objetivo
 
@@ -44,6 +44,7 @@ Evidências mobile:
 - CT-007-login-credenciais-invalidas-mobile.png
 - CT-015-buscar-profissional-psicologia-mobile.png
 - CT-016-agendar-consulta-profissional-mobile.png
+- CT-019-login-com-nova-senha-mobile.png
 
 Status mobile:
 Aprovado com ressalva.

@@ -8,9 +8,10 @@ Este repositório organiza os entregáveis do desafio técnico de Quality Assura
 
 - Cadastro da pessoa usuária: cadastro, pós-cadastro e busca de profissional.
 - Busca de profissional de saúde: buscar profissional e contatar/agendar profissional.
-- Recuperação de senha: solicitação do link no fluxo de "esqueci minha senha", com limitação documentada para a etapa final de criação de nova senha.
+- Recuperação de senha: fluxo completo de "esqueci minha senha", incluindo solicitação do link, redefinição de senha e login com a nova senha.
 - Testes funcionais em versão mobile.
-- Testes de acessibilidade, desempenho e responsividade mobile/desktop.
+- Testes de acessibilidade com Lighthouse, navegação por teclado e leitor de tela NVDA.
+- Testes de desempenho e responsividade mobile/desktop.
 - Registro de bugs e melhorias em formato compatível com GitHub Issues e Notion.
 - Automação com Cypress + Cucumber e pipeline GitHub Actions.
 
@@ -118,7 +119,7 @@ Os relatórios são salvos em:
 - `reports/performance`: relatório do smoke de desempenho.
 - `reports/lighthouse`: relatórios do Lighthouse CI.
 
-No GitHub Actions, os relatórios são publicados como artifacts. O CI executa a suíte mobile de validação de cadastro marcada com `@validacao`; performance e Lighthouse também rodam como etapas diagnósticas, pois podem apontar status de atenção sem necessariamente bloquear a entrega.
+No GitHub Actions, os relatórios são publicados como artefatos. O CI executa a suíte mobile de validação de cadastro marcada com `@validacao`; performance e Lighthouse também rodam como etapas diagnósticas, pois podem apontar status de atenção sem necessariamente bloquear a entrega.
 
 ## Organização
 
@@ -173,6 +174,8 @@ No GitHub Actions, os relatórios são publicados como artifacts. O CI executa a
 
 ## Status da execução
 
-A execução manual foi realizada em ambiente de staging nos principais fluxos mobile. Também foram documentados testes de desempenho, acessibilidade, responsividade mobile/desktop, bugs e melhorias.
+A execução manual foi realizada em ambiente de staging nos principais fluxos mobile, incluindo cadastro, login, pós-cadastro, busca/agendamento de profissional e recuperação completa de senha. Também foram documentados testes de desempenho, acessibilidade com Lighthouse, navegação por teclado e NVDA, responsividade mobile/desktop, bugs e melhorias.
 
 O GitHub Actions foi configurado e executado com sucesso após a publicação do repositório.
+
+O resultado geral é aprovado com ressalvas, devido aos pontos de atenção identificados em performance e posicionamento do widget VLibras em mobile.

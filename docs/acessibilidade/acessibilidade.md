@@ -1,8 +1,8 @@
-﻿# Teste de Acessibilidade
+# Teste de Acessibilidade
 
 ## Objetivo
 
-Validar critérios de acessibilidade da plataforma, incluindo nota Lighthouse, contraste, legibilidade e navegação por teclado.
+Validar critérios de acessibilidade da plataforma, incluindo nota Lighthouse, contraste, legibilidade, navegação por teclado e uso com leitor de tela.
 
 ## Resultado Lighthouse - Acessibilidade
 
@@ -42,10 +42,32 @@ Textos, botões, campos e mensagens devem apresentar contraste suficiente para l
 Evidência:
 Relatório Lighthouse gerado em `reports/lighthouse`.
 
+## AX-003 - Validação com leitor de tela NVDA na tela de login
+
+Viewport:
+Mobile responsivo - 397 x 777
+
+Ferramenta:
+NVDA no Windows, com Chrome em modo responsivo mobile.
+
+Status:
+Aprovado
+
+O que foi feito:
+Foi realizada navegação manual pela tela de login utilizando o leitor de tela NVDA e navegação por teclado.
+
+Resultado obtido:
+O leitor de tela anunciou corretamente os principais elementos interativos da tela de login, incluindo campo de e-mail, campo de senha, botão "Entrar", botão "Criar conta" e link "Esqueci minha senha".
+
+Resultado esperado:
+A pessoa usuária deve conseguir identificar e navegar pelos campos, botões e links principais utilizando leitor de tela.
+
+Evidência:
+AX-003-leitor-tela-nvda-login-mobile.png
+
+Observação:
+A validação foi realizada em ambiente Windows com Chrome em viewport mobile simulada pelo DevTools.
+
 ## Observação
 
-Apesar da nota 100 no Lighthouse, foi identificado manualmente o BUG-001, em que o widget VLibras sobrepõe conteúdos importantes em viewport mobile.
-
-## Limitação
-
-A validação com leitor de tela NVDA ou VoiceOver ainda não foi executada. Este teste depende de ambiente com leitor de tela configurado.
+Apesar da nota 100 no Lighthouse e da aprovação na navegação por teclado/NVDA, foi identificado manualmente o BUG-001, em que o widget VLibras sobrepõe conteúdos importantes em viewport mobile.

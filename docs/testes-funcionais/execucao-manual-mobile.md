@@ -353,3 +353,68 @@ CT-016-agendar-consulta-profissional-mobile.png
 
 Observação:  
 O fluxo "buscar profissional -> contatar/agendar profissional" foi validado com sucesso em viewport mobile.
+## CT-017 - Solicitação de Link de Recuperação de Senha com E-mail Válido
+
+Ambiente: https://paciente-staging.lacreisaude.com.br  
+Viewport: Mobile responsivo - 397 x 777  
+Data da execução: 03/06/2026  
+Status: Aprovado
+
+O que foi feito:  
+Acessei o fluxo "Esqueci minha senha", informei o e-mail de uma conta paciente válida e solicitei o envio do link de redefinição.
+
+Resultado obtido:  
+O sistema exibiu mensagem informando que, caso o e-mail fornecido exista, seria enviado um link para redefinição de senha. O e-mail de redefinição foi recebido na caixa de entrada.
+
+Resultado esperado:  
+O sistema deve permitir a solicitação de recuperação de senha para e-mail válido e enviar o link de redefinição para o endereço informado.
+
+Evidência:  
+CT-017-recuperacao-senha-link-enviado-mobile.png
+
+Observação:  
+O sistema manteve mensagem genérica, adequada para evitar enumeração de contas.
+
+## CT-018 - Redefinição de Senha pelo Link Recebido
+
+Ambiente: https://paciente-staging.lacreisaude.com.br  
+Viewport: Mobile responsivo - 397 x 777  
+Data da execução: 03/06/2026  
+Status: Aprovado
+
+O que foi feito:  
+Acessei o link de redefinição recebido por e-mail e cadastrei uma nova senha válida.
+
+Resultado obtido:  
+O sistema permitiu a criação de uma nova senha seguindo os critérios exigidos.
+
+Resultado esperado:  
+Ao acessar um link válido de redefinição, o sistema deve permitir que a pessoa usuária crie uma nova senha válida.
+
+Evidência:  
+CT-018-redefinir-senha-mobile.png
+
+Observação:  
+Foi utilizada uma senha descartável apenas para fins de teste.
+
+## CT-019 - Login com Nova Senha Após Redefinição
+
+Ambiente: https://paciente-staging.lacreisaude.com.br  
+Viewport: Mobile responsivo - 397 x 777  
+Data da execução: 03/06/2026  
+Status: Aprovado
+
+O que foi feito:  
+Após redefinir a senha, retornei à tela de login e acessei a conta utilizando a nova senha.
+
+Resultado obtido:  
+O sistema autenticou a conta com sucesso utilizando a nova senha.
+
+Resultado esperado:  
+Após a redefinição de senha, a pessoa usuária deve conseguir realizar login com a nova senha cadastrada.
+
+Evidência:  
+CT-019-login-com-nova-senha-mobile.png
+
+Observação:  
+O fluxo completo de recuperação de senha foi validado com sucesso.
