@@ -264,7 +264,7 @@ Evidência:
 CT-012-acessar-busca-profissionais-sem-login-mobile.png
 
 Observação:  
-A URL exibiu o parÃ¢metro de redirect para `/saude/paciente/profissionais/buscar`, indicando que o sistema pode retornar a busca após autenticação.
+A URL exibiu o parâmetro de redirect para `/saude/paciente/profissionais/buscar`, indicando que o sistema pode retornar a busca após autenticação.
 
 ## CT-013 - Login com Conta Válida Redireciona Para pós-Cadastro
 
