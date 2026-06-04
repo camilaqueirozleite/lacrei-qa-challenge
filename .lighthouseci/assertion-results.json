@@ -1,0 +1,31 @@
+[
+  {
+    "name": "minScore",
+    "expected": 0.7,
+    "actual": 0.69,
+    "values": [
+      0.69
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditProperty": "performance",
+    "auditId": "categories",
+    "level": "warn",
+    "url": "https://lacreisaude.com.br/"
+  },
+  {
+    "name": "maxNumericValue",
+    "expected": 5000,
+    "actual": 6049.354050000001,
+    "values": [
+      6049.354050000001
+    ],
+    "operator": "<=",
+    "passed": false,
+    "auditId": "interactive",
+    "level": "warn",
+    "url": "https://lacreisaude.com.br/",
+    "auditTitle": "Time to Interactive",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/interactive/"
+  }
+]

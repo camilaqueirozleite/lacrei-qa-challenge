@@ -1,0 +1,669 @@
+{
+  "generatedAt": "2026-06-03T15:07:02.762Z",
+  "virtualUsers": 30,
+  "thresholdMs": 500,
+  "summary": [
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "requests": 30,
+      "failures": 0,
+      "minMs": 325,
+      "medianMs": 360,
+      "p95Ms": 707,
+      "maxMs": 872,
+      "passed": false
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "requests": 30,
+      "failures": 0,
+      "minMs": 68,
+      "medianMs": 110,
+      "p95Ms": 222,
+      "maxMs": 262,
+      "passed": true
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "requests": 30,
+      "failures": 0,
+      "minMs": 74,
+      "medianMs": 138,
+      "p95Ms": 163,
+      "maxMs": 357,
+      "passed": true
+    }
+  ],
+  "results": [
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 1,
+      "status": 200,
+      "ok": true,
+      "durationMs": 707
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 2,
+      "status": 200,
+      "ok": true,
+      "durationMs": 337
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 3,
+      "status": 200,
+      "ok": true,
+      "durationMs": 433
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 4,
+      "status": 200,
+      "ok": true,
+      "durationMs": 339
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 5,
+      "status": 200,
+      "ok": true,
+      "durationMs": 368
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 6,
+      "status": 200,
+      "ok": true,
+      "durationMs": 383
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 7,
+      "status": 200,
+      "ok": true,
+      "durationMs": 401
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 8,
+      "status": 200,
+      "ok": true,
+      "durationMs": 360
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 9,
+      "status": 200,
+      "ok": true,
+      "durationMs": 872
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 10,
+      "status": 200,
+      "ok": true,
+      "durationMs": 526
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 11,
+      "status": 200,
+      "ok": true,
+      "durationMs": 429
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 12,
+      "status": 200,
+      "ok": true,
+      "durationMs": 360
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 13,
+      "status": 200,
+      "ok": true,
+      "durationMs": 325
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 14,
+      "status": 200,
+      "ok": true,
+      "durationMs": 403
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 15,
+      "status": 200,
+      "ok": true,
+      "durationMs": 331
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 16,
+      "status": 200,
+      "ok": true,
+      "durationMs": 359
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 17,
+      "status": 200,
+      "ok": true,
+      "durationMs": 332
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 18,
+      "status": 200,
+      "ok": true,
+      "durationMs": 337
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 19,
+      "status": 200,
+      "ok": true,
+      "durationMs": 332
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 20,
+      "status": 200,
+      "ok": true,
+      "durationMs": 332
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 21,
+      "status": 200,
+      "ok": true,
+      "durationMs": 400
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 22,
+      "status": 200,
+      "ok": true,
+      "durationMs": 388
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 23,
+      "status": 200,
+      "ok": true,
+      "durationMs": 338
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 24,
+      "status": 200,
+      "ok": true,
+      "durationMs": 357
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 25,
+      "status": 200,
+      "ok": true,
+      "durationMs": 394
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 26,
+      "status": 200,
+      "ok": true,
+      "durationMs": 356
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 27,
+      "status": 200,
+      "ok": true,
+      "durationMs": 423
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 28,
+      "status": 200,
+      "ok": true,
+      "durationMs": 326
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 29,
+      "status": 200,
+      "ok": true,
+      "durationMs": 328
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/login/",
+      "userIndex": 30,
+      "status": 200,
+      "ok": true,
+      "durationMs": 571
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 1,
+      "status": 200,
+      "ok": true,
+      "durationMs": 222
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 2,
+      "status": 200,
+      "ok": true,
+      "durationMs": 96
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 3,
+      "status": 200,
+      "ok": true,
+      "durationMs": 84
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 4,
+      "status": 200,
+      "ok": true,
+      "durationMs": 98
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 5,
+      "status": 200,
+      "ok": true,
+      "durationMs": 115
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 6,
+      "status": 200,
+      "ok": true,
+      "durationMs": 119
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 7,
+      "status": 200,
+      "ok": true,
+      "durationMs": 166
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 8,
+      "status": 200,
+      "ok": true,
+      "durationMs": 96
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 9,
+      "status": 200,
+      "ok": true,
+      "durationMs": 186
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 10,
+      "status": 200,
+      "ok": true,
+      "durationMs": 130
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 11,
+      "status": 200,
+      "ok": true,
+      "durationMs": 130
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 12,
+      "status": 200,
+      "ok": true,
+      "durationMs": 68
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 13,
+      "status": 200,
+      "ok": true,
+      "durationMs": 96
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 14,
+      "status": 200,
+      "ok": true,
+      "durationMs": 117
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 15,
+      "status": 200,
+      "ok": true,
+      "durationMs": 74
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 16,
+      "status": 200,
+      "ok": true,
+      "durationMs": 112
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 17,
+      "status": 200,
+      "ok": true,
+      "durationMs": 101
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 18,
+      "status": 200,
+      "ok": true,
+      "durationMs": 110
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 19,
+      "status": 200,
+      "ok": true,
+      "durationMs": 74
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 20,
+      "status": 200,
+      "ok": true,
+      "durationMs": 94
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 21,
+      "status": 200,
+      "ok": true,
+      "durationMs": 217
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 22,
+      "status": 200,
+      "ok": true,
+      "durationMs": 110
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 23,
+      "status": 200,
+      "ok": true,
+      "durationMs": 100
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 24,
+      "status": 200,
+      "ok": true,
+      "durationMs": 114
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 25,
+      "status": 200,
+      "ok": true,
+      "durationMs": 112
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 26,
+      "status": 200,
+      "ok": true,
+      "durationMs": 72
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 27,
+      "status": 200,
+      "ok": true,
+      "durationMs": 115
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 28,
+      "status": 200,
+      "ok": true,
+      "durationMs": 99
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 29,
+      "status": 200,
+      "ok": true,
+      "durationMs": 113
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/",
+      "userIndex": 30,
+      "status": 200,
+      "ok": true,
+      "durationMs": 262
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 1,
+      "status": 200,
+      "ok": true,
+      "durationMs": 162
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 2,
+      "status": 200,
+      "ok": true,
+      "durationMs": 116
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 3,
+      "status": 200,
+      "ok": true,
+      "durationMs": 116
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 4,
+      "status": 200,
+      "ok": true,
+      "durationMs": 132
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 5,
+      "status": 200,
+      "ok": true,
+      "durationMs": 142
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 6,
+      "status": 200,
+      "ok": true,
+      "durationMs": 155
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 7,
+      "status": 200,
+      "ok": true,
+      "durationMs": 153
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 8,
+      "status": 200,
+      "ok": true,
+      "durationMs": 130
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 9,
+      "status": 200,
+      "ok": true,
+      "durationMs": 161
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 10,
+      "status": 200,
+      "ok": true,
+      "durationMs": 158
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 11,
+      "status": 200,
+      "ok": true,
+      "durationMs": 163
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 12,
+      "status": 200,
+      "ok": true,
+      "durationMs": 107
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 13,
+      "status": 200,
+      "ok": true,
+      "durationMs": 130
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 14,
+      "status": 200,
+      "ok": true,
+      "durationMs": 74
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 15,
+      "status": 200,
+      "ok": true,
+      "durationMs": 155
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 16,
+      "status": 200,
+      "ok": true,
+      "durationMs": 159
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 17,
+      "status": 200,
+      "ok": true,
+      "durationMs": 156
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 18,
+      "status": 200,
+      "ok": true,
+      "durationMs": 128
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 19,
+      "status": 200,
+      "ok": true,
+      "durationMs": 138
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 20,
+      "status": 200,
+      "ok": true,
+      "durationMs": 140
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 21,
+      "status": 200,
+      "ok": true,
+      "durationMs": 154
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 22,
+      "status": 200,
+      "ok": true,
+      "durationMs": 110
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 23,
+      "status": 200,
+      "ok": true,
+      "durationMs": 139
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 24,
+      "status": 200,
+      "ok": true,
+      "durationMs": 153
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 25,
+      "status": 200,
+      "ok": true,
+      "durationMs": 137
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 26,
+      "status": 200,
+      "ok": true,
+      "durationMs": 105
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 27,
+      "status": 200,
+      "ok": true,
+      "durationMs": 75
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 28,
+      "status": 200,
+      "ok": true,
+      "durationMs": 126
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 29,
+      "status": 200,
+      "ok": true,
+      "durationMs": 134
+    },
+    {
+      "url": "https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar",
+      "userIndex": 30,
+      "status": 200,
+      "ok": true,
+      "durationMs": 357
+    }
+  ]
+}

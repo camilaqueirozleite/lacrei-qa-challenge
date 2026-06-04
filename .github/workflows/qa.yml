@@ -1,0 +1,59 @@
+name: Lacrei QA CI
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - develop
+  pull_request:
+
+jobs:
+  e2e:
+    name: Cypress, performance and Lighthouse
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      CYPRESS_BASE_URL: ${{ vars.CYPRESS_BASE_URL }}
+      CYPRESS_REGISTER_PATH: ${{ vars.CYPRESS_REGISTER_PATH }}
+      CYPRESS_SEARCH_PATH: ${{ vars.CYPRESS_SEARCH_PATH }}
+      CYPRESS_FORGOT_PASSWORD_PATH: ${{ vars.CYPRESS_FORGOT_PASSWORD_PATH }}
+      TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
+      TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
+      TEST_USER_NAME: ${{ vars.TEST_USER_NAME }}
+      TEST_USER_PHONE: ${{ secrets.TEST_USER_PHONE }}
+      TEST_USER_CPF: ${{ secrets.TEST_USER_CPF }}
+      PERF_VIRTUAL_USERS: 30
+      PERF_P95_THRESHOLD_MS: 500
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress mobile suite
+        run: npm run test:e2e:mobile
+
+      - name: Run performance smoke
+        run: npm run test:perf
+
+      - name: Run Lighthouse CI
+        run: npm run lighthouse
+
+      - name: Upload QA reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lacrei-qa-reports
+          path: |
+            reports/
+            cypress/downloads/
+          if-no-files-found: warn

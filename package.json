@@ -1,0 +1,35 @@
+{
+  "name": "lacrei-qa-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Entregáveis do desafio técnico de QA da Lacrei Saúde.",
+  "scripts": {
+    "cypress:open": "cypress open --e2e",
+    "test:e2e": "cypress run --e2e --browser chrome",
+    "test:e2e:mobile": "cypress run --e2e --browser chrome --config viewportWidth=390,viewportHeight=844",
+    "test:perf": "node scripts/performance-smoke.js",
+    "lighthouse": "lhci autorun",
+    "test:all": "npm run test:e2e:mobile && npm run test:perf && npm run lighthouse"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "@lhci/cli": "^0.15.1",
+    "cypress": "^15.2.0",
+    "dotenv": "^16.4.7",
+    "esbuild": "^0.25.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "output": "reports/cucumber/cucumber-report.json"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "reports/cucumber/messages.ndjson"
+    },
+    "stepDefinitions": [
+      "cypress/e2e/step_definitions/**/*.js"
+    ]
+  }
+}

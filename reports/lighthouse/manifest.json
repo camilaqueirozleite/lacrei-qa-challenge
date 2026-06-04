@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://lacreisaude.com.br/",
+    "isRepresentativeRun": true,
+    "htmlPath": "C:\\Projetos\\lacrei-qa-challenge\\reports\\lighthouse\\lacreisaude_com_br--2026_06_03_15_16_19.report.html",
+    "jsonPath": "C:\\Projetos\\lacrei-qa-challenge\\reports\\lighthouse\\lacreisaude_com_br--2026_06_03_15_16_19.report.json",
+    "summary": {
+      "performance": 0.69,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    }
+  }
+]

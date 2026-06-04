@@ -1,0 +1,11 @@
+{
+  "pessoaUsuaria": {
+    "nome": "Pessoa QA Lacrei",
+    "email": "qa.lacrei+teste@example.com",
+    "senha": "SenhaForte!2026",
+    "telefone": "11999999999",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "especialidade": "Psicologia"
+  }
+}
