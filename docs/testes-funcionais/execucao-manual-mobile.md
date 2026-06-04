@@ -1,4 +1,4 @@
-﻿# 5. Execução Manual dos Testes - Versão Mobile
+# 5. Execução Manual dos Testes - Versão Mobile
 
 ## CT-001 - Cadastro de Pessoa Usuária
 
@@ -152,7 +152,7 @@ Evidência:
 CT-007-login-credenciais-invalidas-mobile.png
 
 Observação:  
-A mensagem é compreensÃível e orienta a pessoa usuária para o fluxo de recuperação de senha.
+A mensagem é compreensível e orienta a pessoa usuária para o fluxo de recuperação de senha.
 
 ## CT-008 - Acessar Cadastro Pela Tela de Login
 
@@ -176,7 +176,7 @@ CT-008-acessar-cadastro-pelo-login-mobile.png
 Observação:  
 O acesso ao cadastro funcionou corretamente a partir da tela de login.
 
-## CT-009 - Cadastro com Campos ObrigatÃ³rios Vazios
+## CT-009 - Cadastro com Campos Obrigatórios Vazios
 
 Ambiente: https://paciente-staging.lacreisaude.com.br  
 Viewport: Mobile responsivo - 397 x 777  
@@ -299,7 +299,7 @@ O que foi feito:
 Após realizar login com conta válida e avançar no pós-cadastro, acessei a área de busca de profissionais.
 
 Resultado obtido:  
-O sistema exibiu a tela de busca com o tÃítulo "Boas-vindas a  Lacrei Saúde!" e campo de pesquisa para buscar por profissão, especialidade, localidade, sexualidade ou identidade de gênero.
+O sistema exibiu a tela de busca com o título "Boas-vindas à Lacrei Saúde!" e campo de pesquisa para buscar por profissão, especialidade, localidade, sexualidade ou identidade de gênero.
 
 Resultado esperado:  
 Após concluir ou avançar no pós-cadastro, a pessoa usuária deve conseguir acessar a busca de profissionais.

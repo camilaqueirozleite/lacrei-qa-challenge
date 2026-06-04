@@ -1,36 +1,36 @@
-# Lacrei SaÃºde - Desafio TÃ©cnico de QA
+# Lacrei Saúde - Desafio Técnico de QA
 
-Este repositÃ³rio organiza os entregÃ¡veis do desafio tÃ©cnico de Quality Assurance da Lacrei SaÃºde: casos de teste em Gherkin, execuÃ§Ã£o manual, evidÃªncias, testes automatizados com Cypress + Cucumber, documentaÃ§Ã£o para Notion/GitHub, acessibilidade, responsividade, desempenho, registro de bugs e pipeline CI/CD.
+Este repositório organiza os entregáveis do desafio técnico de Quality Assurance da Lacrei Saúde: casos de teste em Gherkin, execução manual, evidências, testes automatizados com Cypress + Cucumber, documentação para Notion/GitHub, acessibilidade, responsividade, desempenho, registro de bugs e pipeline CI/CD.
 
 > Ambiente de staging utilizado: `https://paciente-staging.lacreisaude.com.br`.
 
 ## Escopo
 
-- Cadastro da pessoa usuÃ¡ria: cadastro, pÃ³s-cadastro e busca de profissional.
-- Busca de profissional de saÃºde: buscar profissional e contatar/agendar profissional.
-- RecuperaÃ§Ã£o de senha: solicitaÃ§Ã£o do link no fluxo de "esqueci minha senha", com limitaÃ§Ã£o documentada para a etapa final de criaÃ§Ã£o de nova senha.
-- Testes funcionais em versÃ£o mobile.
+- Cadastro da pessoa usuária: cadastro, pós-cadastro e busca de profissional.
+- Busca de profissional de saúde: buscar profissional e contatar/agendar profissional.
+- Recuperação de senha: solicitação do link no fluxo de "esqueci minha senha", com limitação documentada para a etapa final de criação de nova senha.
+- Testes funcionais em versão mobile.
 - Testes de acessibilidade, desempenho e responsividade mobile/desktop.
-- Registro de bugs e melhorias em formato compatÃ­vel com GitHub Issues e Notion.
-- AutomaÃ§Ã£o com Cypress + Cucumber e pipeline GitHub Actions.
+- Registro de bugs e melhorias em formato compatível com GitHub Issues e Notion.
+- Automação com Cypress + Cucumber e pipeline GitHub Actions.
 
-## PrÃ©-requisitos
+## Pré-requisitos
 
 - Node.js 20 ou superior.
 - npm 10 ou superior.
 - Git.
-- Navegador Chrome/Chromium para execuÃ§Ã£o E2E e Lighthouse.
-- Acesso ao ambiente de staging da Lacrei SaÃºde.
+- Navegador Chrome/Chromium para execução E2E e Lighthouse.
+- Acesso ao ambiente de staging da Lacrei Saúde.
 
-## ConfiguraÃ§Ã£o local
+## Configuração local
 
-1. Instale as dependÃªncias:
+1. Instale as dependências:
 
 ```bash
 npm install
 ```
 
-2. Copie o arquivo de exemplo e preencha as variÃ¡veis com dados descartÃ¡veis de teste:
+2. Copie o arquivo de exemplo e preencha as variáveis com dados descartáveis de teste:
 
 ```bash
 cp .env.example .env
@@ -54,13 +54,13 @@ Rotas identificadas no staging:
 
 - Cadastro: `/saude/paciente/cadastrar/`
 - Busca de profissionais: `/saude/paciente/profissionais/buscar`
-- RecuperaÃ§Ã£o de senha: `/saude/paciente/redefinir-senha/`
+- Recuperação de senha: `/saude/paciente/redefinir-senha/`
 
 ## Como executar testes manuais
 
-1. Abra o ambiente em viewport mobile de atÃ© `600px`.
-2. Use os cenÃ¡rios descritos em [docs/testes-funcionais/execucao-manual-mobile.md](docs/testes-funcionais/execucao-manual-mobile.md).
-3. Registre status, evidÃªncias, dados usados e bugs no arquivo [docs/bugs/bugs-e-melhorias.md](docs/bugs/bugs-e-melhorias.md).
+1. Abra o ambiente em viewport mobile de até `600px`.
+2. Use os cenários descritos em [docs/testes-funcionais/execucao-manual-mobile.md](docs/testes-funcionais/execucao-manual-mobile.md).
+3. Registre status, evidências, dados usados e bugs no arquivo [docs/bugs/bugs-e-melhorias.md](docs/bugs/bugs-e-melhorias.md).
 4. Consolide o resumo final em [NOTION.md](NOTION.md).
 
 ## Como executar testes automatizados
@@ -71,7 +71,7 @@ Abrir o Cypress em modo interativo:
 npm run cypress:open
 ```
 
-Executar todos os cenÃ¡rios E2E em modo headless:
+Executar todos os cenários E2E em modo headless:
 
 ```bash
 npm run test:e2e
@@ -83,13 +83,13 @@ Executar com viewport mobile:
 npm run test:e2e:mobile
 ```
 
-Executar a suÃ­te mobile estÃ¡vel usada no CI:
+Executar a suíte mobile estável usada no CI:
 
 ```bash
 npm run test:e2e:mobile:ci
 ```
 
-Executar performance smoke com 30 usuÃ¡rios simultÃ¢neos:
+Executar performance smoke com 30 usuários simultâneos:
 
 ```bash
 npm run test:perf
@@ -101,26 +101,26 @@ Executar Lighthouse CI:
 npm run lighthouse
 ```
 
-Executar a suÃ­te principal:
+Executar a suíte principal:
 
 ```bash
 npm run test:all
 ```
 
-## RelatÃ³rios
+## Relatórios
 
-Os relatÃ³rios sÃ£o salvos em:
+Os relatórios são salvos em:
 
 - `reports/junit`: resultados JUnit do Cypress.
 - `reports/cucumber`: JSON Cucumber.
 - `reports/screenshots`: screenshots de falhas.
-- `reports/videos`: vÃ­deos do Cypress.
-- `reports/performance`: relatÃ³rio do smoke de desempenho.
-- `reports/lighthouse`: relatÃ³rios do Lighthouse CI.
+- `reports/videos`: vídeos do Cypress.
+- `reports/performance`: relatório do smoke de desempenho.
+- `reports/lighthouse`: relatórios do Lighthouse CI.
 
-No GitHub Actions, os relatÃ³rios sÃ£o publicados como artifacts. O CI executa a suÃ­te mobile de validaÃ§Ã£o de cadastro marcada com `@validacao`; performance e Lighthouse tambÃ©m rodam como etapas diagnÃ³sticas, pois podem apontar status de atenÃ§Ã£o sem necessariamente bloquear a entrega.
+No GitHub Actions, os relatórios são publicados como artifacts. O CI executa a suíte mobile de validação de cadastro marcada com `@validacao`; performance e Lighthouse também rodam como etapas diagnósticas, pois podem apontar status de atenção sem necessariamente bloquear a entrega.
 
-## OrganizaÃ§Ã£o
+## Organização
 
 ```text
 .
@@ -148,31 +148,31 @@ No GitHub Actions, os relatÃ³rios sÃ£o publicados como artifacts. O CI execu
 `-- package.json
 ```
 
-## EvidÃªncias e documentaÃ§Ã£o
+## Evidências e documentação
 
 | Item | Local |
 | --- | --- |
 | Casos de teste em Gherkin | `cypress/e2e/*.feature` |
-| ExecuÃ§Ã£o manual mobile | `docs/testes-funcionais/execucao-manual-mobile.md` |
+| Execução manual mobile | `docs/testes-funcionais/execucao-manual-mobile.md` |
 | Bugs e melhorias | `docs/bugs/bugs-e-melhorias.md` |
-| EvidÃªncias visuais | `evidencias/` |
+| Evidências visuais | `evidencias/` |
 | Acessibilidade | `docs/acessibilidade/acessibilidade.md` |
 | Desempenho | `docs/desempenho/performance.md` |
 | Responsividade | `docs/responsividade/responsividade.md` |
 | Resumo para Notion | `NOTION.md` |
 | Pipeline CI/CD | `.github/workflows/qa.yml` |
 
-## Checklist de seguranÃ§a aplicado
+## Checklist de segurança aplicado
 
-- NÃ£o usar dados reais de pessoas usuÃ¡rias.
-- NÃ£o commitar `.env`, tokens, credenciais ou dados sensÃ­veis.
+- Não usar dados reais de pessoas usuárias.
+- Não commitar `.env`, tokens, credenciais ou dados sensíveis.
 - Executar testes destrutivos apenas em staging.
-- Usar massa de teste identificÃ¡vel, descartÃ¡vel e sem dados reais.
-- Remover evidÃªncias sensÃ­veis antes de publicar no Notion ou GitHub.
-- Evitar automaÃ§Ã£o que envie mensagens reais para profissionais sem autorizaÃ§Ã£o.
+- Usar massa de teste identificável, descartável e sem dados reais.
+- Remover evidências sensíveis antes de publicar no Notion ou GitHub.
+- Evitar automação que envie mensagens reais para profissionais sem autorização.
 
-## Status da execuÃ§Ã£o
+## Status da execução
 
-A execuÃ§Ã£o manual foi realizada em ambiente de staging nos principais fluxos mobile. TambÃ©m foram documentados testes de desempenho, acessibilidade, responsividade mobile/desktop, bugs e melhorias.
+A execução manual foi realizada em ambiente de staging nos principais fluxos mobile. Também foram documentados testes de desempenho, acessibilidade, responsividade mobile/desktop, bugs e melhorias.
 
-O GitHub Actions foi configurado e executado com sucesso apÃ³s a publicaÃ§Ã£o do repositÃ³rio.
+O GitHub Actions foi configurado e executado com sucesso após a publicação do repositório.
