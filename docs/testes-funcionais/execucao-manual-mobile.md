@@ -36,7 +36,7 @@ Resultado obtido:
 O sistema redirecionou corretamente para a tela de login da pessoa paciente.
 
 Resultado esperado:  
-Ao clicar em "Voltar ao login", a pessoa usuÃ¡ria deve retornar para a página de login sem erro.
+Ao clicar em "Voltar ao login", a pessoa usuária deve retornar para a página de login sem erro.
 
 Evidência:  
 CT-002-voltar-ao-login-mobile.png
