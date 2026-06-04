@@ -8,7 +8,7 @@ Data da execução: 03/06/2026
 Status: Parcialmente aprovado
 
 O que foi feito:  
-Realizei o cadastro de uma pessoa usuÃ¡ria paciente em viewport mobile.
+Realizei o cadastro de uma pessoa usuária paciente em viewport mobile.
 
 Resultado obtido:  
 Após finalizar o cadastro, o sistema redirecionou para a tela "Estamos quase lá...", informando que foi enviado um link de verificação para o e-mail cadastrado.
