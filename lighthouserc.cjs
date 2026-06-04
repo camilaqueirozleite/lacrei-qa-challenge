@@ -1,4 +1,10 @@
-const url = process.env.CYPRESS_BASE_URL || "https://lacreisaude.com.br";
+try {
+  require("dotenv").config();
+} catch (_) {
+  // CI/local runs can still use process env only.
+}
+
+const url = process.env.CYPRESS_BASE_URL || "https://paciente-staging.lacreisaude.com.br";
 
 module.exports = {
   ci: {

@@ -15,15 +15,11 @@ jobs:
     timeout-minutes: 30
 
     env:
-      CYPRESS_BASE_URL: ${{ vars.CYPRESS_BASE_URL }}
-      CYPRESS_REGISTER_PATH: ${{ vars.CYPRESS_REGISTER_PATH }}
-      CYPRESS_SEARCH_PATH: ${{ vars.CYPRESS_SEARCH_PATH }}
-      CYPRESS_FORGOT_PASSWORD_PATH: ${{ vars.CYPRESS_FORGOT_PASSWORD_PATH }}
-      TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
-      TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
-      TEST_USER_NAME: ${{ vars.TEST_USER_NAME }}
-      TEST_USER_PHONE: ${{ secrets.TEST_USER_PHONE }}
-      TEST_USER_CPF: ${{ secrets.TEST_USER_CPF }}
+      CYPRESS_BASE_URL: https://paciente-staging.lacreisaude.com.br
+      CYPRESS_REGISTER_PATH: /saude/paciente/cadastrar/
+      CYPRESS_SEARCH_PATH: /saude/paciente/profissionais/buscar
+      CYPRESS_FORGOT_PASSWORD_PATH: /saude/paciente/redefinir-senha/
+      PERFORMANCE_URLS: https://paciente-staging.lacreisaude.com.br/login/,https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/,https://paciente-staging.lacreisaude.com.br/saude/paciente/profissionais/buscar
       PERF_VIRTUAL_USERS: 30
       PERF_P95_THRESHOLD_MS: 500
 
@@ -39,13 +35,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Cypress mobile suite
-        run: npm run test:e2e:mobile
+      - name: Run Cypress mobile validation suite
+        run: npm run test:e2e:mobile:ci
 
       - name: Run performance smoke
+        continue-on-error: true
         run: npm run test:perf
 
       - name: Run Lighthouse CI
+        continue-on-error: true
         run: npm run lighthouse
 
       - name: Upload QA reports

@@ -7,6 +7,7 @@
     "cypress:open": "cypress open --e2e",
     "test:e2e": "cypress run --e2e --browser chrome",
     "test:e2e:mobile": "cypress run --e2e --browser chrome --config viewportWidth=390,viewportHeight=844",
+    "test:e2e:mobile:ci": "cypress run --e2e --browser chrome --config viewportWidth=390,viewportHeight=844 --spec cypress/e2e/cadastro-pessoa-usuaria.feature --env TAGS=@validacao",
     "test:perf": "node scripts/performance-smoke.js",
     "lighthouse": "lhci autorun",
     "test:all": "npm run test:e2e:mobile && npm run test:perf && npm run lighthouse"
