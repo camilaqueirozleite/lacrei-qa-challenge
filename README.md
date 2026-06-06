@@ -1,3 +1,10 @@
+![CI](https://github.com/camilaqueirozleite/lacrei-qa-challenge/actions/workflows/qa.yml/badge.svg)
+![Cypress](https://img.shields.io/badge/Cypress-17202C?logo=cypress&logoColor=white)
+![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?logo=cucumber&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
+![Lighthouse](https://img.shields.io/badge/Lighthouse-F44B21?logo=lighthouse&logoColor=white)
+![Quality Assurance](https://img.shields.io/badge/Quality_Assurance-Testing-blue)
 # Lacrei Saúde - Desafio Técnico de QA
 
 Este repositório organiza os entregáveis do desafio técnico de Quality Assurance da Lacrei Saúde: casos de teste em Gherkin, execução manual, evidências, testes automatizados com Cypress + Cucumber, documentação para Notion/GitHub, acessibilidade, responsividade, desempenho, registro de bugs e pipeline CI/CD.
